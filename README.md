@@ -8,4 +8,4 @@ It is my intention to eventually have this website up, purchased through the Eco
 and advertising my projects and such.
 
 Software used:
-Komodo Edit 8
+Komodo Edit 8 & Atom (I like this editor better and am using exclusively now)
