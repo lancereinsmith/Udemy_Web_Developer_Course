@@ -9,3 +9,4 @@ and advertising my projects and such.
 
 Software used:
 Komodo Edit 8
+Atom (I like this editor better)
