@@ -7,7 +7,5 @@ Everything for this repo is done for the Udemy class
 It is my intention to eventually have this website up, purchased through the Eco Web Hosting,
 and advertising my projects and such.
 
-Changes such as this could be pulled into my own version of the file.
-
 Software used:
 Komodo Edit 8
