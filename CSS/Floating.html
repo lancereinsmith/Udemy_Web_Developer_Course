@@ -15,10 +15,13 @@
         height:400px;
         float:left;
         }
-      .redbox{
-        background-color:red;
+      .greenbox{
+        background-color:green;
         width:200px;
-        height:400px;
+        float:right;
+        }
+      .clear{
+        clear:both;
       }
     </style>
 </head>
@@ -29,10 +32,17 @@
       This is some text.
     </p>
   </div>
-  <div class="redbox">
-    <p>
-      This is even more text.
-    </p>
+  <div class="greenbox">
+    <p>Even more text goes here.</p>
   </div>
+  <p>
+    More Text.
+  </p>
+
+  <div class="clear"></div>
+
+  <p>
+    This text is cleared so it will not be between the floated divs.
+  </p>
 </body>
 </html>
