@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Position:Relative allows us to move divs like so-->
+    <style type="text/css">
+    <!--Absolute pos removes element from page flow-->
+    <!--Fixed keeps it relative to browser: always stays in same position
+    no matter where the browser scrolls to-->
+    <!--If not specified, position is set to static-->
+      .yellowbox{
+        background-color:purple;
+        position:absolute;
+        }
+      .greenbox{
+        background-color:green;
+        width:200px;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="yellowbox">
+    <p>
+      This is some text.
+    </p>
+  </div>
+
+  <div class="greenbox">
+    <p>Even more text goes here.</p>
+  </div>
+
+</body>
+</html>
