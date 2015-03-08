@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+    <!--Margin:Space outside-->
+    <!--Padding:Space inside-->
+    .yellowbox{
+      background-color:#FFFF00;
+      color:#8000FF;
+      <!--Always top, right, bottom, left-->
+      margin:10px, 20px, 10px, 20px;
+      }
+    .greenbox{
+        background-color:green;
+        width:200px;
+        padding:20px;
+      }
+    <!--To Fix p padding, must set p margin to 0-->
+    p{
+      margin:0px;
+    }
+    </style>
+</head>
+
+<body>
+
+  <div class="yellowbox">
+      <!--Remember, p tag has some padding built in-->
+    <p>
+      This is some text.
+    </p>
+  </div>
+
+  <div class="greenbox">
+    <p>Even more text goes here.</p>
+  </div>
+
+</body>
+</html>
