@@ -72,7 +72,8 @@
     }
 
     input{
-      height:15px;
+      width:120px;
+      height:20px;
       position:relative;
       bottom:3px;
       font-weight:bold;
@@ -90,7 +91,7 @@
     #title-bar{
       width:100%;
       background-color:#98050C;
-      height:95px;
+      height:85px;
     }
 
     #title{
@@ -106,13 +107,26 @@
       color:white;
       font-size:70%;
       padding:38px 5px 0px 5px;
-      font-weight:bold;
       letter-spacing:1px;
-      margin:0px 100px 0px 0px;
     }
 
-    #updated{
-      font-weight:normal;
+    #rss{
+      float:right;
+      color:white;
+      font-size:75%;
+      padding:0px 50px;
+      position:relative;
+      bottom:20px;
+    }
+
+    #rss img{
+      height:15px;
+      position:relative;
+      top:4px;
+    }
+
+    #rss:hover{
+      text-decoration:underline;
     }
 
     </style>
@@ -191,12 +205,11 @@
         </div>
 
         <div id="date">
-          9 March 2015
-          <span id="updated">Last updated at 23:47 EST</span>
+          <strong>9 March 2015</strong> Last updated at 23:47 EST
         </div>
 
         <div id="rss">
-
+          RSS <img src="Images/RSSLogo.png" />
         </div>
 
       </div>
