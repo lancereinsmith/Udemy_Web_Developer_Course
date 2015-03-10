@@ -71,6 +71,10 @@
       border-bottom:5px solid white;
     }
 
+    .white-border a{
+      text-decoration:none;
+    }
+
     input{
       width:120px;
       height:20px;
@@ -112,7 +116,6 @@
 
     #rss{
       float:right;
-      color:white;
       font-size:75%;
       padding:0px 50px;
       position:relative;
@@ -125,8 +128,42 @@
       top:4px;
     }
 
-    #rss:hover{
-      text-decoration:underline;
+    a{
+      color:white;
+    }
+
+    #news-list ul{
+      font-size:12px;
+      padding:0px;
+      margin:0px;
+      float:left;
+    }
+
+    #news-list li{
+      color:white;
+      float:left;
+      border-left: 1px solid #5A2D30;
+      margin:3px 5px 0px 5px;
+      padding-left:5px;
+      list-style:none;
+      text-wrap:pre-wrap;
+      height:13px;
+    }
+
+    #news-container{
+      height:22px;
+      width:100%;
+      background-color:#3D0D0E;
+      position:relative;
+      bottom:10px;
+    }
+
+    .blackbox{
+      background-color:#3D0D0E;
+    }
+
+    .whitebox{
+      background-color:#EDEDED;
     }
 
     </style>
@@ -141,45 +178,45 @@
       <div class="fixed-width">
 
         <div id="BBCLogo">
-          <img src="Images/BBCLogo.png" />
+          <a href=""><img src="Images/BBCLogo.png" /></a>
         </div>
 
         <div id="top-menu">
             <ul>
                 <li class="white-border">
-                  News
+                  <a href="">News</a>
                 </li>
 
                 <li class="white-border">
-                  Sport
+                  <a href="">Sport</a>
                 </li>
 
                 <li class="white-border">
-                  Weather
+                  <a href="">Weather</a>
                 </li>
 
                 <li class="white-border">
-                  Earth
+                  <a href="">Earth</a>
                 </li>
 
                 <li class="white-border">
-                  Future
+                  <a href="">Future</a>
                 </li>
 
                 <li class="white-border">
-                  Shop
+                  <a href="">Shop</a>
                 </li>
 
                 <li class="white-border">
-                  TV
+                  <a href="">TV</a>
                 </li>
 
                 <li class="white-border">
-                  Radio
+                  <a href="">Radio</a>
                 </li>
 
                 <li class="white-border">
-                  More...
+                  <a href="">More...</a>
                 </li>
 
                 <li>
@@ -193,8 +230,7 @@
 
     </div>
 
-    <div class="clear">
-    </div>
+    <div class="clear"></div>
 
     <div id="title-bar">
 
@@ -209,7 +245,80 @@
         </div>
 
         <div id="rss">
-          RSS <img src="Images/RSSLogo.png" />
+          <a href="">RSS <img src="Images/RSSLogo.png" /></a>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="news-container">
+
+          <div id="news-list">
+
+            <ul>
+
+                <li class="blackbox">
+                  Home
+                </li>
+
+                <li class="blackbox">
+                  US &#38; Canada
+                </li>
+
+                <li class="blackbox">
+                  Latin America
+                </li>
+
+                <li class="blackbox">
+                  UK
+                </li>
+
+                <li class="blackbox">
+                  Africa
+                </li>
+
+                <li class="blackbox">
+                  Asia
+                </li>
+
+                <li class="blackbox">
+                  Australia
+                </li>
+
+                <li class="blackbox">
+                  Europe
+                </li>
+
+                <li class="blackbox">
+                  Mid-East
+                </li>
+
+                <li class="blackbox">
+                  Business
+                </li>
+
+                <li class="blackbox">
+                  Health
+                </li>
+
+                <li class="blackbox">
+                  Sci/Environment
+                </li>
+
+                <li class="blackbox">
+                  Tech
+                </li>
+
+                <li class="blackbox">
+                  Entertainment
+                </li>
+
+                <li class="blackbox">
+                  Video
+                </li>
+            </ul>
+
+          </div>
+
         </div>
 
       </div>
