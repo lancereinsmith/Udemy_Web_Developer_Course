@@ -14,8 +14,105 @@
       line-height:16px;
     }
 
+    div{
+      margin:0px;
+    }
+
     #topbar{
-      
+      background-color:#7A040A;
+      width:100%;
+      height:45px;
+      margin:0px;
+    }
+
+    .fixed-width{
+      width:1040px;
+      margin:0px auto;
+    }
+
+    #BBCLogo{
+      float:left;
+      padding: 7px 1px 3px 20px;
+      border-right:1px solid #871D22;
+      height:35px;
+      margin:0px 220px 0px 0px;
+    }
+
+    #BBCLogo img{
+      height:32px;
+    }
+
+    #BBCLogo:hover{
+      height:25px;
+      border-bottom:5px soild white;
+    }
+
+    #top-menu ul{
+      font-size:12px;
+      font-weight:bold;
+      padding:0px;
+      margin:0px;
+    }
+
+    #top-menu li{
+      color:white;
+      float:left;
+      border-left: 1px solid #871D22;
+      padding:15px 10px 0px 10px;
+      list-style:none;
+      height:30px;
+    }
+
+    #top-menu li:hover{
+      height:25px;
+    }
+
+    .white-border:hover{
+      border-bottom:5px solid white;
+    }
+
+    input{
+      height:15px;
+      position:relative;
+      bottom:3px;
+      font-weight:bold;
+      color:black;
+      padding-left:10px;
+      font-size:110%;
+      border:none;
+      top:-4px;
+    }
+
+    .clear{
+      clear:both;
+    }
+
+    #title-bar{
+      width:100%;
+      background-color:#98050C;
+      height:95px;
+    }
+
+    #title{
+      float:left;
+      padding:30px 0px 15px 15px;
+      font-size:42px;
+      color:white;
+      letter-spacing:2px;
+      margin:0px 20px 0px 0px;
+    }
+
+    #date{
+      color:white;
+      font-size:70%;
+      padding:38px 5px 0px 5px;
+      font-weight:bold;
+      letter-spacing:1px;
+      margin:0px 100px 0px 0px;
+    }
+
+    #updated{
+      font-weight:normal;
     }
 
     </style>
@@ -26,6 +123,83 @@
   <div id="container">
 
     <div id="topbar">
+
+      <div class="fixed-width">
+
+        <div id="BBCLogo">
+          <img src="Images/BBCLogo.png" />
+        </div>
+
+        <div id="top-menu">
+            <ul>
+                <li class="white-border">
+                  News
+                </li>
+
+                <li class="white-border">
+                  Sport
+                </li>
+
+                <li class="white-border">
+                  Weather
+                </li>
+
+                <li class="white-border">
+                  Earth
+                </li>
+
+                <li class="white-border">
+                  Future
+                </li>
+
+                <li class="white-border">
+                  Shop
+                </li>
+
+                <li class="white-border">
+                  TV
+                </li>
+
+                <li class="white-border">
+                  Radio
+                </li>
+
+                <li class="white-border">
+                  More...
+                </li>
+
+                <li>
+                  <input type="text" placeholder="Search" />
+                </li>
+
+            </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="clear">
+    </div>
+
+    <div id="title-bar">
+
+      <div class="fixed-width">
+
+        <div id="title">
+          NEWS
+        </div>
+
+        <div id="date">
+          9 March 2015
+          <span id="updated">Last updated at 23:47 EST</span>
+        </div>
+
+        <div id="rss">
+
+        </div>
+
+      </div>
 
     </div>
 
