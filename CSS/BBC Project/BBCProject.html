@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>BBC News</title>
+    <title>BBC News - Home</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -83,9 +83,15 @@
       font-weight:bold;
       color:black;
       padding-left:10px;
+      margin-right:-20px;
       font-size:110%;
       border:none;
       top:-4px;
+    }
+
+    #SearchImg{
+      position:absolute;
+      height:15px;
     }
 
     .clear{
@@ -96,6 +102,7 @@
       width:100%;
       background-color:#98050C;
       height:85px;
+      margin:0px;
     }
 
     #title{
@@ -120,12 +127,22 @@
       padding:0px 50px;
       position:relative;
       bottom:20px;
+      opacity:0.5;
     }
 
     #rss img{
       height:15px;
       position:relative;
       top:4px;
+    }
+
+    #rss a{
+      text-decoration:none;
+    }
+
+    #rss:hover{
+      opacity:1;
+      text-decoration:underline;
     }
 
     a{
@@ -150,20 +167,143 @@
       height:13px;
     }
 
+    #news-list a{
+      text-decoration:none;
+    }
+
+    #news-list a:hover{
+      text-decoration:underline;
+    }
+
     #news-container{
       height:22px;
       width:100%;
       background-color:#3D0D0E;
       position:relative;
       bottom:10px;
+      margin-bottom:0px;
     }
 
     .blackbox{
       background-color:#3D0D0E;
     }
 
-    .whitebox{
+    #main-page{
+      width:100%;
+      height:900px;
+      background-color:#FFFFFF;
+      margin:0px;
+    }
+
+    #magazine-container{
+      width:100%;
+      height:22px;
       background-color:#EDEDED;
+      margin-top:0px;
+    }
+
+    #magazine-bar ul{
+      margin:0px;
+      padding:0px;
+      font-size:12px;
+      float:left;
+    }
+
+    #magazine-bar li{
+
+      height:12px;
+      list-style:none;
+      text-wrap:pre-wrap;
+      float:left;
+      padding-left:5px;
+      margin:3px 5px 0px 5px;
+      border-left: 1px solid #CCCCCC;
+    }
+
+    #magazine-bar a{
+      color:#515151;
+      text-decoration:none
+    }
+
+    #magazine-bar a:hover{
+      text-decoration:underline;
+    }
+
+    #breaking-container{
+      width:100%;
+      height:35px;
+      border-bottom:1px solid #DDDDDD;
+    }
+
+    #breaking-news{
+      font-size:14px;
+      font-weight:bold;
+      color:#515151;
+      height:20px;
+      padding:8px 150px 0px 0px;
+    }
+
+    #breaking-news a{
+      padding-left:10px;
+      font-size:12px;
+      color:#225080;
+      font-weight:normal;
+      text-decoration:none;
+    }
+
+    #breaking-news a:hover{
+      text-decoration:underline;
+    }
+
+    #Pause{
+      float:right;
+      position:relative;
+      height:20px;
+      bottom:18px;
+      right:10px;
+      opacity:0.5;
+    }
+
+    #Pause img{
+      height:20px;
+    }
+
+    #Pause:hover{
+      opacity:1;
+    }
+
+    #arrow-left{
+      float:right;
+      position:relative;
+      height:22px;
+      bottom:19px;
+      right:10px;
+      opacity:0.5;
+    }
+
+    #arrow-left img{
+      height:22px;
+    }
+
+    #arrow-left:hover{
+      opacity:1;
+    }
+
+    #arrow-right{
+      float:right;
+      position:relative;
+      height:20px;
+      bottom:19px;
+      right:10px;
+      opacity:0.5;
+    }
+
+    #arrow-right img{
+      height:20px;
+    }
+
+    #arrow-right:hover{
+      opacity:1;
     }
 
     </style>
@@ -220,7 +360,7 @@
                 </li>
 
                 <li>
-                  <input type="text" placeholder="Search" />
+                  <input type="text" placeholder="Search" /><img id="SearchImg" src="Images/InputImg.png">
                 </li>
 
             </ul>
@@ -257,63 +397,63 @@
             <ul>
 
                 <li class="blackbox">
-                  Home
+                  <a href="">Home</a>
                 </li>
 
                 <li class="blackbox">
-                  US &#38; Canada
+                  <a href="">US &#38; Canada</a>
                 </li>
 
                 <li class="blackbox">
-                  Latin America
+                  <a href="">Latin America</a>
                 </li>
 
                 <li class="blackbox">
-                  UK
+                  <a href="">UK</a>
                 </li>
 
                 <li class="blackbox">
-                  Africa
+                  <a href="">Africa</a>
                 </li>
 
                 <li class="blackbox">
-                  Asia
+                  <a href="">Asia</a>
                 </li>
 
                 <li class="blackbox">
-                  Australia
+                  <a href="">Australia</a>
                 </li>
 
                 <li class="blackbox">
-                  Europe
+                  <a href="">Europe</a>
                 </li>
 
                 <li class="blackbox">
-                  Mid-East
+                  <a href="">Mid-East</a>
                 </li>
 
                 <li class="blackbox">
-                  Business
+                  <a href="">Business</a>
                 </li>
 
                 <li class="blackbox">
-                  Health
+                  <a href="">Health</a>
                 </li>
 
                 <li class="blackbox">
-                  Sci/Environment
+                  <a href="">Sci/Environment</a>
                 </li>
 
                 <li class="blackbox">
-                  Tech
+                  <a href="">Tech</a>
                 </li>
 
                 <li class="blackbox">
-                  Entertainment
+                  <a href="">Entertainment</a>
                 </li>
 
                 <li class="blackbox">
-                  Video
+                  <a href="">Video</a>
                 </li>
             </ul>
 
@@ -325,6 +465,85 @@
 
     </div>
 
+    <div class="clear"></div>
+
+    <div id="main-page">
+
+      <div class="fixed-width">
+
+      <div id="magazine-container">
+
+        <div id="magazine-bar">
+
+          <ul>
+
+            <li>
+              <a href="">Magazine</a>
+            </li>
+
+            <li>
+              <a href="">In Pictures</a>
+            </li>
+
+            <li>
+              <a href="">Also in the News</a>
+            </li>
+
+            <li>
+              <a href="">Editors' Blog</a>
+            </li>
+
+            <li>
+              <a href="">Have Your Say</a>
+            </li>
+
+            <li>
+              <a href="">World News TV</a>
+            </li>
+
+            <li>
+              <a href="">World Service Radio</a>
+            </li>
+
+            <li>
+              <a href="">Special Reports</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="breaking-container">
+
+        <div id="breaking-news">
+          LATEST: <a href="">Two Senior US Secret Service Men Are Under Investigation After Crash At White House</a>
+        </div>
+
+        <div id="arrow-left">
+          <a href=""><img src="Images/ArrowLeft.png"></a>
+        </div>
+
+        <div id="arrow-right">
+          <a href=""><img src="Images/ArrowRight.png"></a>
+        </div>
+
+        <div id="Pause">
+          <a href=""><img src="Images/PauseButton.png"></a>
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+      <div
+
+      </div>
+
+    </div>
   </div>
 
 </body>
