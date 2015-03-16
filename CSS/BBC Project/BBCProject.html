@@ -309,8 +309,8 @@
       opacity:1;
     }
 
-    .block-element{
-      margin:0px;
+    .block-element-breaking{
+      margin-bottom:10px;
       padding:10px 10px 10px 0px;
       width:675px;
       height:270px;
@@ -320,17 +320,44 @@
       font-size:14px;
     }
 
-    .block-element h1{
+    .block-element-breaking h1{
       float:left;
       margin:0px;
       font-size:32px;
     }
 
-    #blockPtop{
+    #breakingP{
       width:250px;
       height:100px;
       margin:20px 10px 0px 0px;
       float:right;
+    }
+
+    .block-element-breaking a{
+      color:#225080;
+      text-decoration:none;
+    }
+
+    .block-element-breaking a:hover{
+      text-decoration:underline;
+    }
+
+    .block-element-breaking img{
+      float:left;
+      width:400px;
+      height:240px;
+      margin:10px 5px 5px 0px;
+    }
+
+    .block-element{
+      margin-bottom:10px;
+      padding:10px 10px 10px 0px;
+      width:675px;
+      height:200px;
+      margin-right:10px;
+      border-bottom:1px solid #DDDDDD;
+      float:left;
+      font-size:14px;
     }
 
     .block-element a{
@@ -344,31 +371,71 @@
 
     .block-element img{
       float:left;
-      width:400px;
-      height:240px;
-      margin:10px 5px 5px 0px;
+      width:350px;
+      height:200px;
+      margin:0px 5px 5px 0px;
     }
 
-    .supportingLinks img{
+    .block-element h3{
+      color:#225080;
+      float:left;
+      width:280px;
+      margin:0px;
+      margin-bottom:10px;
+    }
+
+    .block-element h3:hover{
+      text-decoration:underline;
+    }
+
+    .block-element p{
+      width:250px;
+      height:100px;
+      margin:5px 65px 0px 0px;
+      float:right;
+    }
+
+    .supportingLinksBreaking img{
       width:25px;
       height:25px;
       position:relative;
       bottom:10px;
     }
 
-    .supportingLinks{
+    .supportingLinksBreaking{
       margin:5px 60px 0px 0px;
       float:right;
       width:200px;
-      height:40px;
+      height:100px;
     }
 
-    .supportingLinks ul{
+    .supportingLinksBreaking ul{
       padding:5px;
       margin:0px;
     }
 
-    .supportingLinks li{
+    .supportingLinksBreaking li{
+      text-wrap:pre-wrap;
+      list-style:none;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .supportingLinksBlock{
+      margin:5px 115px 0px 0px;
+      float:right;
+      position:relative;
+      bottom:30px;
+      width:200px;
+      height:70px;
+    }
+
+
+    .supportingLinksBlock ul{
+      padding:5px;
+      margin:0px;
+    }
+
+    .supportingLinksBlock li{
       text-wrap:pre-wrap;
       list-style:none;
       margin: 10px 0px 0px 0px;
@@ -380,7 +447,6 @@
       height:135px;
       padding:0px;
       margin-top:10px;
-
       background-color:#EDEDED;
     }
 
@@ -429,14 +495,77 @@
       color:#505050;
     }
 
+    .side-element-block h5:hover{
+      text-decoration:underline;
+    }
+
     #old-news{
-      border:1px solid black;
-      width:675px;
-      height:500px;
+      width:100%;
+      height:460px;
       padding:0px;
       margin:0px;
     }
 
+    .block-element-container{
+      float:left;
+      width:690px;
+      height:460px;
+      margin:0px;
+      margin-right:10px;
+      padding:0px;
+    }
+
+    #contactContainer{
+      width:335px;
+      height:455px;
+      float:right;
+      padding:0px;
+      margin:0px;
+    }
+
+    #contactBar{
+      float:right;
+      width:330px;
+      height:300px;
+      margin:0px;
+      margin-bottom:10px;
+      padding:0px;
+      background-color:#EDEDED;
+    }
+
+    #podcastBar{
+      float:right;
+      width:330px;
+      height:100px;
+      margin:0px;
+      padding:0px;
+      background-color:#EDEDED;
+    }
+
+    #podcastBar h3{
+      float:left;
+      margin:5px 0px 5px 5px;
+      padding:0px;
+      color:#225080;
+    }
+
+    #podcastBar h3:hover{
+      text-decoration:underline;
+    }
+
+    #podcastBar img{
+      float:left;
+    }
+
+    #podcastBar p{
+      width:190px;
+      height:40px;
+      font-size:12px;
+      float:left;
+      margin:0px;
+      margin-left:5px;
+      padding:0px;
+    }
     </style>
 </head>
 
@@ -670,17 +799,17 @@
 
       <div class="clear"></div>
 
-      <div class="block-element">
+      <div class="block-element-breaking">
 
         <h1><a href="">UN Failing Syrians, say charaties</a></h1>
 
-        <img src="Images/Syrians.jpg">
+        <a href=""><img src="Images/Syrians.jpg"></a>
 
-        <p id="blockPtop">
+        <p id="breakingP">
           New information from mulitple sources suggests that a lack of funding from United Nations and dwindiling support for refugee camps is having horrible reprecussions for the those interned within.
         </p>
 
-      <div class="supportingLinks">
+      <div class="supportingLinksBreaking">
 
           <ul>
             <li>
@@ -689,7 +818,7 @@
               </a>
             </li>
             <li>
-              <a href="">Experts predict influx of refugees in coming year</a>
+              <a class="supportingLink" href="">Experts predict influx of refugees in coming year</a>
             </li>
           </ul>
 
@@ -700,8 +829,9 @@
       <div class="side-element">
           <a href=""><h2>Magazine</h2></a>
           <div class="side-element-block">
+            <a href="">
             <img src="Images/sideimage2.jpg">
-            <h5>Five Million and Counting</h5>
+            <h5>Five Million and Counting</h5></a>
             <p>
               The man building the world's biggest record collection.
             </p>
@@ -710,8 +840,9 @@
           <div class="clear"></div>
 
           <div class="side-element-block">
+            <a href="">
             <img src="Images/sideimage1.jpg">
-            <h5>Filthy Rich</h5>
+            <h5>Filthy Rich</h5></a>
             <p>
               Why being wealthy could make you a meaner person.
             </p>
@@ -721,8 +852,9 @@
       <div class="side-element">
         <h2>Features</h2>
         <div class="side-element-block">
+          <a href="">
           <img src="Images/sideimage4.jpg">
-          <h5>Cyber Bullying</h5>
+          <h5>Cyber Bullying</h5></a>
           <p>
             Allegations shock even the most violent counties.
           </p>
@@ -731,11 +863,12 @@
         <div class="clear"></div>
 
         <div class="side-element-block">
-          <img src="Images/sideimage3.jpg">
-          <h5>School Abuse</h5>
-          <p>
-            Student abuse went on for years.
-          </p>
+          <a href="">
+            <img src="Images/sideimage3.jpg">
+            <h5>School Abuse</h5></a>
+            <p>
+              Student abuse went on for years.
+            </p>
         </div>
       </div>
 
@@ -743,11 +876,83 @@
 
       <div id="old-news">
 
+        <div class="block-element-container">
+
+
         <div class="block-element">
-            <img src="Images/Saddam.jpg">
+            <a href=""><img src="Images/Saddam.jpg" />
+            <h3>Hussein's Resting Place Destroyed</h3></a>
+            <p class="blockP">
+              Tomb of former Iraqi dictator said to have been completely leveled by new rebel offensive on Turkit.
+            </p>
+            <div class="supportingLinksBlock">
+              <ul>
+                <li>
+                  <a href="">
+                    Rebel battle caught on video
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Images of the site
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="block-element">
+          <a href=""><img src="Images/Venezuela.jpg"/></a>
+          <h3>New Venezuelan Leader Vows Strong Government</h3></a>
+          <p class="blockP">
+            "Let the people decide what is right for our country and its future"
+          </p>
+          <div class="supportingLinksBlock">
+            <ul>
+              <li>
+                <a class="supportingLink" href="">
+                  Nicolas Maduro: Who is he?
+                </a>
+              </li>
+              <li>
+                <a class="supportingLink" href="">
+                  Venezuelan Government and its History
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
+
+      <div id="contactContainer">
+
+        <div id="contactBar">
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="podcastBar">
+          <a href=""><h3>BBC World Service Podcasts</h3></a>
+
+          <div class="clear"></div>
+
+          <a href=""><img src="Images/Podcast.jpg" /></a>
+
+          <p>
+            A former undercover DEA Agent on how to net a drug kinpin
+          </p>
+        </div>
+
+      </div>
+
+      </div>
+
+      <div class="clear"></div>
+
 
 
       </div>
