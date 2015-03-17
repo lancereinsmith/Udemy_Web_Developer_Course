@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>Learning Javascript</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+  <p id="text">
+    Original Text is Some Text
+  </p>
+
+  <script type="text/javascript">
+  //Comments are done differently in JS, like programming languages they are done with a double slash
+
+  //document refers to this document, and getElementById allows us to grab an element with a specific id (we have marked the p above with an id of text), and innerHTML allows us to grab the content of that element
+  alert(document.getElementById("text").innerHTML);
+
+  //We can alter elements and their contents by running JS with them
+  document.getElementById("text").innerHTML="But JS Changes it to 'Some More Text'";
+
+
+  </script>
+
+
+</body>
+
+</html>
