@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Learning Javascript</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+
+  #circle{
+    width:200px;
+    height:200px;
+    border-radius:120px;
+    background-color:red;
+  }
+  </style>
+</head>
+
+<body>
+
+  <div id="circle">
+  </div>
+  <button id="CircleColorer">Make the Circle Change Colors!</button>
+
+  <script type="text/javascript">
+  document.getElementById("CircleColorer").onclick=function(){
+
+    if (document.getElementById("circle").style.background == 'red')
+    {
+      document.getElementById("circle").style.background = 'black';
+    }
+    else {
+      document.getElementById("circle").style.background = 'red';
+    }
+
+  }
+  </script>
+
+
+</body>
+
+</html>
