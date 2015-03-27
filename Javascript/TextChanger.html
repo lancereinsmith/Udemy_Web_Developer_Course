@@ -30,8 +30,21 @@
   </p>
 
   <script type="text/javascript">
-  document.getElementById("textChanger")
 
+  document.getElementById("textChanger").onclick=function(){
+
+    document.getElementById("firstP").innerHTML="Some more text";
+  }
+
+  document.getElementById("textAppender").onclick=function(){
+
+    document.getElementById("secondP").innerHTML = document.getElementById("secondP").innerHTML + "is Awesome...";
+  }
+
+  document.getElementById("textCreator").onclick=function(){
+
+    document.getElementById("thirdP").innerHTML = "Created some text";
+  }
   </script>
 
 
