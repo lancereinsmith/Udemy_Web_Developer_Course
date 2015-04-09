@@ -10,18 +10,28 @@
 </head>
 
 <body>
-  <button onclick="alert('Basic Javascript Alerts Go Here')">Click Me!</button>
 
+  <input id="myInput" type="text" value="test"/>
 
-  <!--Allows for use of JS outside of inline use, best way of doing it-->
+  <button id="stylesChanger">Change the text!</button>
+
+  <div id="firstDiv">
+    This is some text
+  </div>
+
   <script type="text/javascript">
-  <!--type is always text/js, just like CSS-->
 
-    alert('Page Loaded');
+
+    var newText = document.getElementById("myInput").value;
+
+    document.getElementById("stylesChanger").onclick=function() {
+
+      newText = document.getElementById("myInput").value;
+
+      document.getElementById("firstDiv").innerHTML=newText;
+    }
 
   </script>
-  <!--Script goes either in head tag or at the end of the body tag-->
-
 </body>
 
 </html>
