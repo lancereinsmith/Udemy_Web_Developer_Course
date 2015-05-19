@@ -9,3 +9,5 @@ and advertising my projects and such.
 
 Software used:
 Komodo Edit 8 & Atom (I like this editor better and am using exclusively now)
+FileZilla
+SourceTree for Git Management (Also using iTerm)
