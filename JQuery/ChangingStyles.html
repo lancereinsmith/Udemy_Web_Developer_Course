@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--Base JQuery Embed, or we would use http://code.jquery.com/jquery-latest.min.js" as src-->
+    <!--This is bad if we don't know how updating JQ version will affect code-->
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style>
+
+    .square{
+      width:200px;
+      height:200px;
+      background-color:red;
+      margin:20px;
+    }
+
+    #circle{
+      width:100px;
+      height:100px;
+      background-color:green;
+      border-radius:50px;
+      margin:20px;
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <div id="circle"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+
+  <script>
+
+    $("#circle").click(function() {
+      $(".square").fadeOut();
+    })
+
+    /*$(".square").click(function() {
+      alert($(".square").css("width"));
+    })*/
+
+    /*All Elements*/
+    /*$("div").click(function() {
+      alert($(this).css("width"));
+    })*/
+
+    /*Change a css value */
+    /*$("div").click(function() {
+      $(this).css("width", "400px");
+    })*/
+
+    /*Hide an element */
+    /*$("div").click(function() {
+      $(this).css("display", "none");
+      <!--OR-->
+      $(this).hide();
+      <!--FadeOut-->
+      $(this).FadeOut();
+    })*/
+
+  </script>
+
+</body>
+
+</html>
