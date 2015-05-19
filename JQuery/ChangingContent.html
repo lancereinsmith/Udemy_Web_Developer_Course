@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--Base JQuery Embed, or we would use http://code.jquery.com/jquery-latest.min.js" as src-->
+    <!--This is bad if we don't know how updating JQ version will affect code-->
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style>
+
+    .square{
+      width:100px;
+      height:100px;
+      background-color:red;
+      margin:20px;
+    }
+
+    #circle{
+      width:100px;
+      height:100px;
+      background-color:green;
+      border-radius:50px;
+      margin:20px;
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <div id="circle"></div>
+  <p>
+    This is some text
+  </p>
+  <iframe src="http://www.cnn.com"></iframe>
+
+  <script>
+
+    $("#circle").hover(function() {
+      $("p").html("The Text Has Been Changed");
+      $("iframe").attr("src", "http://www.wikipedia.com");
+    })
+
+  </script>
+
+</body>
+
+</html>
