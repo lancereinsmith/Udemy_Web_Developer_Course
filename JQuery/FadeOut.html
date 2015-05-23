@@ -14,11 +14,15 @@
 
     <style>
 
-    #fadeButton{
-      width:100px;
-      height: 100px;
+    #fadeOutButton{
+      width:150px;
+      height:20px;
     }
 
+    #fadeInButton{
+      width:150px;
+      height:20px;
+    }
 
     </style>
 
@@ -26,16 +30,25 @@
 
 <body>
 
-  <button id ="fadeButton">Fade Out The Text?</button>
-  <p>
+  <button id ="fadeOutButton">Fade Out The Text</button>
+  <button id ="fadeInButton">Fade In The Text</button>
+  <p style="margin-left: 40px;">
     This is some text that will fade out.
   </p>
 
   <script>
 
-    $("#fadeButton").click(function() {
-      $("p").fadeOut();
+    $("#fadeOutButton").click(function() {
+      $("p").fadeOut("slow", function() {
+        alert("Text Has Faded Out");
+      });
     })
+
+    $("#fadeInButton").click(function() {
+      $("p").fadeIn("fast", function() {
+        alert("Text Has Faded In");
+      });
+    });
 
 
   </script>
