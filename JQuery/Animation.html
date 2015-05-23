@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--Base JQuery Embed, or we would use http://code.jquery.com/jquery-latest.min.js" as src-->
+    <!--This is bad if we don't know how updating JQ version will affect code-->
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style>
+
+    #circle{
+      width:300px;
+      height:300px;
+      margin:50px;
+      background-color: red;
+      border-radius: 100px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+  <button id ="fadeOutButton">Fade Out The Text</button>
+  <button id ="fadeInButton">Fade In The Text</button>
+  <p style="margin-left: 40px;">
+    This is some text that will fade out.
+  </p>
+
+  <script>
+
+    $("#fadeOutButton").click(function() {
+      $("p").fadeOut("slow", function() {
+        alert("Text Has Faded Out");
+      });
+    })
+
+  </script>
+
+</body>
+
+</html>
