@@ -19,7 +19,7 @@
       height:300px;
       margin:50px;
       background-color: red;
-      border-radius: 100px;
+      border-radius: 150px;
     }
 
     </style>
@@ -28,19 +28,13 @@
 
 <body>
 
-  <button id ="fadeOutButton">Fade Out The Text</button>
-  <button id ="fadeInButton">Fade In The Text</button>
-  <p style="margin-left: 40px;">
-    This is some text that will fade out.
-  </p>
+  <div id="circle"></div>
 
   <script>
 
-    $("#fadeOutButton").click(function() {
-      $("p").fadeOut("slow", function() {
-        alert("Text Has Faded Out");
-      });
-    })
+    $("#circle").click(function() {
+      $(this).animate({width: "600px", height: "600px"}, 2000);
+    });
 
   </script>
 
