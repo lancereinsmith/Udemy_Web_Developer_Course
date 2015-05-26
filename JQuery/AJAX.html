@@ -12,13 +12,31 @@
     <!--This is bad if we don't know how updating JQ version will affect code-->
     <script type="text/javascript" src="jquery.min.js"></script>
 
+    <style>
+
+      #syncer{
+        width:200px;
+        height:25px;
+        background-color: blue;
+      }
+
+    </style>
+
 </head>
 
 <body>
 
     <h2>Asyncronous Javascript And XML (AJAX)</h2>
 
+    <button id="syncer">Get the button content!</button>
+
   <script>
+
+    $("#syncer").click(function() {
+        $.ajax({url:"AJAXtext.html"}).done(function(data) {
+          $("h2").append(data);
+        });
+    });
 
   </script>
 
