@@ -1,0 +1,20 @@
+#wrapper {
+		width:200px;
+		height: 900px;
+		margin: 0px auto;
+}
+
+input {
+	width: 200px;
+	height: 30px;
+	margin: 10px;
+	padding: 7px;
+	border-radius: 10px;
+	border: 1px solid;
+	font-size: 18px;
+}
+
+label {
+	width:150px;
+	padding-top: 7px;
+}
