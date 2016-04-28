@@ -1,6 +1,3 @@
-README
-
-This is a repository for my website, codedbyclark.com
 Everything for this repo is done for the Udemy class
 "The Complete Web Develop Course: Build 14 Websites" By Rob Percival
 
